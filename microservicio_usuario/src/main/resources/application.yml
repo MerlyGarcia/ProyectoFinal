@@ -1,0 +1,9 @@
+server:
+  port: 8088
+spring:
+  application:
+    name: microservicio-usuario
+  main:
+    allow-bean-definition-overriding: true
+  config:
+    import: optional:configserver:http://localhost:8097/

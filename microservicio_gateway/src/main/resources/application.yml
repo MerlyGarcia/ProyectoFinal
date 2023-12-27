@@ -1,0 +1,9 @@
+server:
+  port: 8099
+spring:
+  application:
+    name: microservicio-gateway
+  main:
+    allow-bean-definition-overriding: true
+  config:
+    import: optional:configserver:http://localhost:8097/
